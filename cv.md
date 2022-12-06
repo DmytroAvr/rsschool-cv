@@ -1,25 +1,25 @@
- Dmytro Avr
+# Dmytro Avr
 
- contacts
+## contacts
 
-Discord: Dmytro9#0920
+- **Discord:** Dmytro9#0920
 
- About myself:
+## About myself:
 
 I'm beginner in front-end. I want to have new profession. The profession in what I will be happy.
 Profession which will give me possibility to travel
 
- Skills:
+## Skills:
 
-HTML
+**HTML**
 
-CSS
-Figma
-JS (basic knowledge)
-VSCode
-Git (basic knowledge)
+- **CSS**
+- **Figma**
+- **JS** (basic knowledge)
+- **VSCode**
+- **Git** (basic knowledge)
 
- Code example:
+## Code example:
 
 ```
 function checkString(str) {
@@ -33,9 +33,9 @@ function checkString(str) {
 }
 ```
 
- Languages:
+## Languages:
 
-Ukrainian - native
-English - A2-B1. Good vocabulary but bad grammar
-Polish - A1
-Russian - native
+- **Ukrainian** - native
+- **English** - A2-B1. Good vocabulary but bad grammar
+- **Polish** - A1
+- **Russian** - native
