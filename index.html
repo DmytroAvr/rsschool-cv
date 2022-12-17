@@ -94,7 +94,19 @@
 			<section class="code" id="code">
 				<div class="code__container">
 					<h2 class="code__title title">Code</h2>
-					<code class="code__example"></code>
+					<code class="code__example">
+						<pre>
+							function checkString(str) {
+							 let value;
+							 let newString = "";
+							 for (let i = 0; i < str.length; i++) {
+							  value = str[i];
+							  if (value == " ") {
+							   continue
+							  } else { newString += value; }
+							 }
+							}</pre>
+					</code>
 				</div>
 			</section>
 			<section class="courses" id="courses">
@@ -107,7 +119,7 @@
 			</section>
 			<section class="projects" id="projects">
 				<div class="projects__container">
-					<div class="projects__title title">Project</div>
+					<h2 class="projects__title title">Project</h2>
 					<ul class="projects__list list">
 						<li class="list__item"><a target="_blank" class="list__link" href="https://dmytroavr.github.io/flsGURU/hw20/">Coursera</a></li>
 					</ul>
@@ -139,16 +151,11 @@
 				<a class="footer__link-gh" href="https://github.com/DmytroAvr" title="my github profile" target="_blank">
 					<img class="footer__gh-logo" src="img/github.svg" alt="github profile">
 				</a>
-				<a class="footer__rs" href="https://rs.school/" target="_blank">
+				<a class="footer__rs" href="https://rs.school/js-stage0/" target="_blank">
 					<img src="img/rs_school_js.svg" alt="rs school logo">
 				</a>
 				<p class="footer__year footer__title">2022</p>
 			</div>
-			<ul>
-				<li><a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/cv.md">task cv</a></li>
-				<li><a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/cv-stage0.md">stage 0</a></li>
-				<li><a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/cv-stage0-hints.md">stage 0</a></li>
-			</ul>
 		</footer>
 	</div>
 </body>

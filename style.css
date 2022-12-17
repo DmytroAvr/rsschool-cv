@@ -258,6 +258,10 @@ section:target .title::after {
 }
 .code__example {
 }
+.code__example pre {
+ background-color: #999;
+ padding: 20px 0;
+}
 .courses {
 }
 .courses__title {
