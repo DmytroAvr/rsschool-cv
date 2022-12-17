@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Abyssinica+SIL:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Actor:regular&display=swap");
+
 *,
 *::after,
 *::before {
@@ -47,6 +50,8 @@ button {
 }
 body {
   line-height: 1;
+  font-family: Actor, sans-serif;
+  font-weight: normal;
 }
 
 .wrapper {
@@ -81,18 +86,257 @@ body {
   max-width: 1110px;
   margin: 0 auto;
   padding: 0 15px;
+  padding-top: 30px;
+}
+[class*="__container"]:not(:last-child) {
+  padding-bottom: 10px;
+}
+[class*="__container"]:hover {
+  background: #eeeded;
+}
+[class*="__container"]:hover .title::after {
+  width: 10%;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+[class*="__container"]:hover .profile__title:after {
+  width: 40%;
+}
+
+/*========================*/
+/*========================*/
+/* common */
+/* common */
+.title {
+  font-family: "Abyssinica SIL", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.25;
+}
+[class*="__title"] {
+  margin-bottom: 10px;
+}
+.title::after {
+  transition: all 0.8s ease 0s;
+  display: block;
+  content: "";
+  width: 5%;
+  height: 4px;
+  background: #000;
+  border-radius: 2px;
+}
+section:target .title {
+  color: orange;
+}
+section:target .title::after {
+  background-color: orange;
+}
+/*  */
+.list {
+  padding-left: 5%;
+  max-width: 50%;
+  line-height: 1.2;
+}
+.list__item {
+}
+.list__item a {
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+.list__item a:hover {
+  display: inline-block;
+  color: orange;
+  transform: translateX(5px);
+}
+.list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.list__link {
+}
+
+/*========================*/
+/*========================*/
+
+.header {
+}
+.header__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header__menu {
+}
+.menu {
+}
+.menu__body {
+}
+.menu__list {
+  display: flex;
+  column-gap: 15px;
+  justify-content: flex-end;
+}
+.menu__item {
+}
+.menu__link {
+  display: block;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  padding: 5px;
+}
+.menu__item:hover .menu__link {
+  color: #ffa500;
+  font-weight: 500;
+  transform: translateY(-2px);
+  text-shadow: 1px 1px 1px #000;
+}
+.profile {
+}
+.profile__container {
+  display: flex;
+}
+.profile__img {
+  max-width: 300px;
+  border-radius: 50px;
   overflow: hidden;
+  box-shadow: 10px 10px 0px orange;
+  transform: rotate(-5deg);
+}
+.profile__img img {
+  width: 100%;
+}
+.profile__info {
+  align-self: center;
+  margin: 0 auto;
+}
+.profile__title {
+  margin-bottom: 20px;
+}
+.profile__title::after {
+  width: 20%;
+}
+
+.profile__sub-title {
+}
+.contacts {
+}
+.contacts__container {
+}
+.contacts__title {
+}
+.contacts__details {
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 5%;
+}
+.contacts__details > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.summary {
+}
+.summary__container {
+}
+.summary__title {
+}
+.summary__text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  max-width: 50%;
+  line-height: 1.2;
+}
+.skills {
+}
+.skills__container {
+}
+.skills__title {
+}
+.skills__list {
+}
+.code {
+}
+.code__title {
+}
+.code__example {
+}
+.courses {
+}
+.courses__title {
+}
+.courses_list {
+}
+.projects {
+}
+.projects__container {
+}
+.projects__title {
+}
+.projects__list {
+}
+.education {
+}
+.education__container {
+}
+.education__title {
+}
+.education__list {
+}
+.languages {
+}
+.languages__container {
+}
+.languages__title {
+}
+.Ukraine {
+  background-color: yellow;
+  padding: 5px;
+  border-radius: 3px;
+  margin-left: -5px;
+}
+.native {
+  background-color: blue;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+}
+.footer {
+}
+.footer .footer__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__link-gh {
+  max-width: 50px;
+}
+.footer__link-gh img {
+  transition: all 0.3s ease 0s;
+}
+.footer__link-gh:hover img {
+  transform: scale(1.2);
+}
+.footer__gh-logo path {
+  fill: #fff;
+}
+.footer__link-gh img {
+  width: 100%;
+}
+.footer__rs {
+  max-width: 200px;
+}
+.footer__rs img {
+  width: 100%;
+}
+.footer__year {
+}
+.footer__title {
+  font-family: "Abyssinica SIL", serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 1.25;
+  margin-bottom: 0;
 }
