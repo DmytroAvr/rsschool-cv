@@ -23,13 +23,14 @@ Profession which will give me possibility to travel
 
 ```
 function checkString(str) {
-  let value;
-  let newString = "";
-    for  (let i = 0; i < str.length; i++) {
-    value = str[i];
-    if(value == " ") {
-      continue
-  } else newString += value;
+	let value;
+	let newString = "";
+	for (let i = 0; i < str.length; i++) {
+		value = str[i];
+		if (value == " ") {
+			continue
+		} else { newString += value; }
+	}
 }
 ```
 
